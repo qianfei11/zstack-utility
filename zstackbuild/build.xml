@@ -291,15 +291,6 @@
             <sequential>
                 <antcall target="build-zstack-vyos"/>
             </sequential>
-            <sequential>
-                <antcall target="build-zstack-network"/>
-            </sequential>
-            <sequential>
-                <antcall target="build-zstack-sharedblock"/>
-            </sequential>
-            <sequential>
-                <antcall target="check-zstack-distro"/>
-            </sequential>
         </parallel>
     </target>
 
@@ -381,12 +372,6 @@
             </sequential>
             <sequential>
                 <antcall target="assemble-zstack-vyos"/>
-            </sequential>
-            <sequential>
-                <antcall target="assemble-zstack-network"/>
-            </sequential>
-            <sequential>
-                <antcall target="assemble-zstack-sharedblock"/>
             </sequential>
             <sequential>
                 <antcall target="assemble-zstack-promtail"/>
